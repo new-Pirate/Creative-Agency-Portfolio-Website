@@ -1,0 +1,59 @@
+.b-portfolioHeader {
+
+    &_position {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__text {
+        font-family: "Open-Sans-Italic", sans-serif;
+        font-size: 29px;
+        line-height: 36px;
+        color: #fff;
+
+        &_margin {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__title {
+        font-family: "Open-Sans-Extrabold", sans-serif;
+        font-size: 43px;
+        line-height: 33px;
+        color: #fff;
+
+        &_margin {
+            margin-bottom: 34px;
+        }
+    }
+
+    &__tilde {
+        font-family: "Open-Sans-Regular", sans-serif;
+        font-size: 75px;
+        line-height: 10px;
+        color: #fff;
+
+        &_margin {
+            margin-bottom: 28px;
+
+        }
+    }
+
+    &__desc{
+        font-family: "Open-Sans-Regular", sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        width: 562px;
+        color: #fff;
+
+        .respondToDown(sm-desktops, {
+            width: 100%;
+        });
+
+        &_margin {
+            margin-bottom: 64px;
+        }
+    }
+}

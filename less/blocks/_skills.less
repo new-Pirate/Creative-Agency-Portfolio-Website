@@ -1,0 +1,15 @@
+.b-skills {
+    padding: 66px 0 120px 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:  100px;
+
+    &_position {
+        .respondToDown(lg-desktops, {
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 50px;
+        });
+    }
+}

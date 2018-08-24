@@ -1,0 +1,28 @@
+.b-portfolioContent {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 578px 273px 273px;
+    grid-gap: 20px;
+    grid-template-areas: "saxophone brush laptop"
+                         "saxophone typewriter typewriter";
+                         
+    &_position {
+        .respondToDown(xl-desktops, {
+            grid-template-rows: 1fr 383px 297px;
+            grid-template-columns: 282px 282px;
+            justify-content: center; 
+            grid-template-areas: "saxophone saxophone"
+                                 "brush laptop" 
+                                 "typewriter typewriter";
+        });
+
+        .respondToDown(sm-desktops, {
+            grid-template-rows: 329px 383px 383px 150px;
+            grid-template-columns: 274px;
+            grid-template-areas: "saxophone"
+                                 "brush" 
+                                 "laptop" 
+                                 "typewriter";
+        });
+    }
+}

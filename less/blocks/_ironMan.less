@@ -1,0 +1,15 @@
+.b-ironMan {
+
+    &_position {
+        position: absolute;
+
+        .respondCustom(768px, 1310px, {
+            position: relative;
+            text-align: center;
+        });
+
+        .respondToDown(md-desktops, {
+            display: none;
+        });
+    }
+}

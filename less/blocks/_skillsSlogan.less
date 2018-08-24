@@ -1,0 +1,46 @@
+.b-slogan {
+    font-family: "Open-Sans-Extrabold", sans-serif;
+
+    &_possition {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        justify-self: center;
+        margin-top: 120px;
+
+        .respondToDown(lg-desktops, {
+            grid-row-end: 1;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        });
+    }
+    
+    &__header {
+        font-size: 33px;
+    }
+
+    &__footerAwesome {
+        width: 240px;
+        line-height: 50px;
+        color: #fff;
+        font-size: 43px;
+        background-color: #EEB501;
+
+        &_posotion {
+            margin-top: 10px;
+            padding-left: 5px;
+        }
+    }
+
+    &__footerSkills {
+        width: 140px;
+        line-height: 50px;
+        color: #fff;
+        font-size: 43px;
+        background-color: #EEB501;
+
+        &_posotion {
+            margin-top: 10px;
+            padding-left: 5px;
+        }
+    }
+}

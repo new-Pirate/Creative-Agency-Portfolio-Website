@@ -1,0 +1,127 @@
+@import "_variables.less";
+@import "blocks/_logo.less";
+@import "blocks/_menu.less";
+@import "blocks/_ironMan.less";
+@import "blocks/_headerArticle.less";
+@import "blocks/_skills.less";
+@import "blocks/_skillsSlogan.less";
+@import "blocks/_skillsUnit.less";
+@import "blocks/_portfolioHeader.less";
+@import "blocks/_portfolioContent.less";
+@import "blocks/_portfolioContent_saxophone.less";
+@import "blocks/_portfolioContent_brush.less";
+@import "blocks/_portfolioContent_laptop.less";
+@import "blocks/_portfolioContent_typewriter.less";
+@import "blocks/_ourTeamHeader.less";
+@import "blocks/_ourTeamContent.less";
+@import "blocks/_ourTeamItem1.less";
+@import "blocks/_ourTeamItem2.less";
+@import "blocks/_ourTeamItem3.less";
+@import "blocks/_ourTeamItem4.less";
+@import "blocks/_testimonials.less";
+@import "blocks/_ourClientsHeader.less";
+@import "blocks/_ourClientsContent.less";
+@import "blocks/_footerHeader.less";
+@import "blocks/_footerMap.less";
+@import "blocks/_footerMessage.less";
+@import "blocks/_footerForm.less";
+@import "blocks/_footerSocials.less";
+@import "blocks/_footerContacts.less";
+@import "blocks/_footerCopyright.less";
+
+@font-face {
+    font-family: "Open-Sans-Bold";
+    src: url(../fonts/Open-Sans-Bold.ttf)
+}
+    
+@font-face {
+    font-family: "Open-Sans-Extrabold";
+    src: url(../fonts/Open-Sans-Extrabold.ttf)
+}
+
+@font-face {
+    font-family: "Open-Sans-Italic";
+    src: url(../fonts/Open-Sans-Italic.ttf)
+}
+
+@font-face {
+    font-family: "Open-Sans-Regular";
+    src: url(../fonts/Open-Sans-Regular.ttf)
+}
+
+.headerWrap {
+    background: url(../images/header_background.jpg);
+    background-size: cover;
+    min-height: 812px;
+    height: 100%;
+
+    .headerTop {
+        justify-content: space-between;
+
+        .respondToDown(xl-desktops, {
+        justify-content: center;
+        });
+    }
+
+    .headerBottom {
+        width: 1310px;
+        margin: 0 auto;
+        color: #fff;
+
+        .respondCustom(0, 1310px, {
+            width: 100%;
+            justify-content: center;
+        });
+    }
+}
+
+.skillsWrap {
+    background: url(../images/skills_background.jpg);
+    background-size: cover;
+    min-height: 714px;
+    height: 100%;
+}
+
+.portfolioWrap {
+    background: url(../images/portfolio_background.jpg);
+    background-size: cover;
+    min-height: 1220px;
+    height: 100%;
+    padding: 100px 0 60px 0;
+
+    .container {
+        padding: 0;
+    }
+}
+
+.ourTeamWrap {
+    background: url(../images/ourTeam_background.jpg);
+    background-size: cover;
+    min-height: 1018px;
+    height: 100%;
+    padding: 100px 0 80px 0;
+}
+
+.testimonialsWrap {
+    background: url(../images/testimonials_background.jpg);
+    background-size: cover;
+    min-height: 714px;
+    height: 100%;
+    padding: 134px 0 142px 0;
+}
+
+.ourClientsWrap {
+    background: url(../images/ourClients_background.jpg);
+    background-size: cover;
+    min-height: 766px;
+    height: 100%;
+    padding: 94px 0 90px 0;
+}
+
+.footerWrap {
+    background: url(../images/footer_background.jpg);
+    background-size: cover;
+    min-height: 1390px;
+    height: 100%;
+    padding: 114px 0 64px 0;
+}

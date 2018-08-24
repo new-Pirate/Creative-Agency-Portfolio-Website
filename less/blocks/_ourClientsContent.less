@@ -1,0 +1,27 @@
+.b-ourClientsContent {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 300px 300px 300px 300px;
+    // grid-template-areas: "item1 item2 item3 item4"
+    //                      "item1 item2 item3 item4";
+
+    &_position {
+        .respondToDown(xl-desktops, {
+            grid-template-rows: 150px 150px 150px;
+            grid-template-columns: 300px 300px 300px;
+        });
+
+        .respondToDown(md-desktops, {
+            grid-template-rows: 150px 150px 150px 150px;
+            grid-template-columns: 300px 300px;
+        });
+
+        .respondToDown(sm-desktops, {
+            grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px;
+            grid-template-columns: 300px;
+        });
+    }
+}
