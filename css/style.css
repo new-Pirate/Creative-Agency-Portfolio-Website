@@ -494,6 +494,9 @@
   font-size: 25px;
   line-height: 24px;
 }
+.b-ourClientsHeader {
+  width: 100%;
+}
 .b-ourClientsHeader_position {
   flex-direction: column;
   align-items: center;
@@ -674,6 +677,7 @@
 }
 .b-footerSocials img {
   margin: 0 11px;
+  cursor: pointer;
 }
 .b-footerContacts {
   flex-direction: column;
@@ -745,37 +749,37 @@
     justify-content: center;
   }
 }
-.skillsWrap {
+main .skillsWrap {
   background: url(../images/skills_background.jpg);
   background-size: cover;
   min-height: 714px;
   height: 100%;
 }
-.portfolioWrap {
+main .portfolioWrap {
   background: url(../images/portfolio_background.jpg);
   background-size: cover;
   min-height: 1220px;
   height: 100%;
   padding: 100px 0 60px 0;
 }
-.portfolioWrap .container {
+main .portfolioWrap .container {
   padding: 0;
 }
-.ourTeamWrap {
+main .ourTeamWrap {
   background: url(../images/ourTeam_background.jpg);
   background-size: cover;
   min-height: 1018px;
   height: 100%;
   padding: 100px 0 80px 0;
 }
-.testimonialsWrap {
+main .testimonialsWrap {
   background: url(../images/testimonials_background.jpg);
   background-size: cover;
   min-height: 714px;
   height: 100%;
   padding: 134px 0 142px 0;
 }
-.ourClientsWrap {
+main .ourClientsWrap {
   background: url(../images/ourClients_background.jpg);
   background-size: cover;
   min-height: 766px;
